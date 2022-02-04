@@ -1,7 +1,7 @@
 {
   "name": "desafio-rarolabs",
   "version": "1.0.0",
-  "main": "src/api/app.js",
+  "main": "src/api/index.js",
   "repository": "git@github.com:rslfilho/desafio-rarolabs.git",
   "author": "Roberval Filho <rslfilho@gmail.com>",
   "license": "MIT",
@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
     "express": "^4.17.2",
     "joi": "^17.6.0",
     "swagger-ui-express": "^4.3.0"
