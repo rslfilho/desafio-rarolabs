@@ -5,7 +5,7 @@ const express = require('express');
 const root = require('../routers/root');
 const { error } = require('../middlewares');
 
-const { PORT } = process.env;
+const PORT = process.env.PORT || 3000;
 
 const app = express();
 
