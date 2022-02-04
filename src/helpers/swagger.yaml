@@ -29,9 +29,23 @@ paths:
           name: quantidadePaginas
           type: integer
           description: O número total de páginas da paginação
+      produces:
+        - application/json
       responses:
         200:
           description: Retorna no corpo da resposta um array com a paginação
+          schema:
+            type: object
+            properties:
+              id:
+                type: string
+                format: uuid
+                description: O id do usuário.
+              paginacao:
+                type: array
+                items:
+                  type: string
+                description: Item da paginação.
         400:
           description: Parâmetros query não enviados, inválidos ou com "paginaAtual" maior que "quantidadePaginas"
         500:
