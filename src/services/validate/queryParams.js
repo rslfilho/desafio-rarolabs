@@ -1,9 +1,9 @@
 const Joi = require('joi');
 
 const schema = Joi.object({
-  page: Joi.string
+  page: Joi.number()
     .required(),
-  pageQuantity: Joi.string()
+  pageQuantity: Joi.number()
     .required(),
 });
   
