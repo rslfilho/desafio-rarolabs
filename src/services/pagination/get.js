@@ -1,3 +1,4 @@
+const { v4: uuidv4 } = require('uuid');
 const validate = require('../validate');
 const { getPagination } = require('../../helpers');
 
@@ -7,6 +8,7 @@ module.exports = async (page, pageQuantity) => {
   if (page > pageQuantity) return { code: 'pageBigger' };
   
   const pagination = getPagination(page, pageQuantity);
+  const id = uuidv4();
 
-  return pagination;
+  return { id, paginacao: pagination };
 };
