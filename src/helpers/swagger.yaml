@@ -1,7 +1,7 @@
 ---
 swagger: '2.0'
 info:
-  title: Desafio Prático Raro Labs
+  title: API de paginação
   version: 0.0.1
   description: |
     Descrição da API para o desafio técnico da Raro Labs 
