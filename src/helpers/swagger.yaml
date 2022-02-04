@@ -1,0 +1,38 @@
+---
+swagger: '2.0'
+info:
+  title: Desafio Prático Raro Labs
+  version: 0.0.1
+  description: |
+    Descrição da API para o desafio técnico da Raro Labs 
+    Construcão de uma API paginadora 
+
+    Aplicante: Roberval Filho
+    
+    Email: rslfilho@gmail.com
+    Github: https://github.com/rslfilho
+    LinkedIn: https://www.linkedin.com/in/rslfilho/
+basePath: /v1
+paths:
+  /paginacao:
+    get:
+      tags:
+        - Paginação
+      summary: "Rota de paginação"
+      description: Recebe as informações da paginação a partir da url, confere a validade das mesmas e, em caso de informações válidas, gera um array de paginação
+      parameters:
+        - in: query
+          name: paginaAtual
+          type: integer
+          description: O número da página atual na paginação (precisa ser menor que "quantidadePaginas")
+        - in: query
+          name: quantidadePaginas
+          type: integer
+          description: O número total de páginas da paginação
+      responses:
+        200:
+          description: Retorna no corpo da resposta um array com a paginação
+        400:
+          description: Parâmetros query não enviados, inválidos ou com "paginaAtual" maior que "quantidadePaginas"
+        500:
+          description: Erro interno do servidor
