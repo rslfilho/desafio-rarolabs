@@ -11,7 +11,7 @@ module.exports = async (req, res, next) => {
     const response = await paginationService.get(page, pageQuantity);
     if ('code' in response) return next(errors.invalidParams);
 
-    res.status(200).end();
+    return res.status(200).json(response);
   } catch (e) {
     next(e);
   }
