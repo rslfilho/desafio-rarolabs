@@ -7,7 +7,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node .",
-    "dev": "node-dev .",
+    "dev": "nodemon .",
     "test": "mocha src/tests/**/*$NAME*.test.js --exit",
     "test:coverage": "nyc --all --reporter=lcov npm run test",
     "test:unit": "mocha src/tests/01-unit/*$NAME*.test.js --exit",
@@ -35,7 +35,7 @@
     "eslint-plugin-mocha": "^10.0.3",
     "eslint-plugin-sonarjs": "^0.11.0",
     "mocha": "^9.2.0",
-    "node-dev": "^7.1.0",
+    "nodemon": "^2.0.15",
     "nyc": "^15.1.0",
     "sinon": "^13.0.1"
   }
