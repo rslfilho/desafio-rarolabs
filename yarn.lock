@@ -704,6 +704,11 @@ chai-http@^4.3.0:
     qs "^6.5.1"
     superagent "^3.7.0"
 
+chai-uuid@^1.0.6:
+  version "1.0.6"
+  resolved "https://registry.yarnpkg.com/chai-uuid/-/chai-uuid-1.0.6.tgz#353a3b817dd66aa2608a0660faf68593fb918c8b"
+  integrity sha1-NTo7gX3WaqJgigZg+vaFk/uRjIs=
+
 chai@^4.3.6:
   version "4.3.6"
   resolved "https://registry.yarnpkg.com/chai/-/chai-4.3.6.tgz#ffe4ba2d9fa9d6680cc0b370adae709ec9011e9c"
