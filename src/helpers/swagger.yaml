@@ -4,14 +4,17 @@ info:
   title: API de paginação
   version: 0.0.1
   description: |
-    Descrição da API para o desafio técnico da Raro Labs 
-    Construcão de uma API paginadora 
-
+    API para o desafio técnico da Raro Labs
     Aplicante: Roberval Filho
+
+    Desafio: Construcão de uma API paginadora 
+    Instruções: https://git.rarolabs.com.br/-/snippets/308
     
     Email: rslfilho@gmail.com
     Github: https://github.com/rslfilho
     LinkedIn: https://www.linkedin.com/in/rslfilho/
+
+    Data: 05/02/2022
 basePath: /v1
 paths:
   /paginacao:
@@ -33,7 +36,7 @@ paths:
         - application/json
       responses:
         200:
-          description: Retorna no corpo da resposta um array com a paginação
+          description: Retorna no corpo da resposta o id e um array com a paginação
           schema:
             type: object
             properties:
@@ -48,5 +51,17 @@ paths:
                 description: Item da paginação.
         400:
           description: Parâmetros query não enviados, inválidos ou com "paginaAtual" maior que "quantidadePaginas"
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                description: A mensagem de erro
         500:
           description: Erro interno do servidor
+          schema:
+            type: object
+            properties:
+              message:
+                type: string
+                description: A mensagem de erro
