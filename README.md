@@ -144,6 +144,14 @@ A API está contida na pasta `/src` dentro da raiz do repositório, nela temos:
 * `yarn test:integration:coverage` ou `npm run test:integration:coverage` para rodar apenas os testes de integração e gerar o relatório de cobertura na tela do terminal;
 * `yarn lint` ou `npm run lint` para rodar o ESLint;
 
+## Deploy
+
+Esta aplicação está rodando na plataforma do Heroku, usando a integração direta com o GitHub.
+
+Está acessível pelo endpoint `https://rslfilho-rarolabs.herokuapp.com/`.
+
+É possível acessar a página Swagger da aplicação rodando e/ou testar a aplicação, ver detalhadamente os parâmetros esperados, as possíveis respostas e sua formatação [aqui](https://g3-deliveryapp-backend.herokuapp.com/swagger/).
+
 ## Contribuições
 
 Fique à vontade para abrir um PR para qualquer contribuição que desejar. 
