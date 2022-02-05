@@ -108,18 +108,18 @@ A API foi desenvolvida em Node.js com Express.
 
 Além disso, as dependências da aplicação são:
 
-- `cors` para liberação de acesso;
-- `joi` para validação de `schemas` e dados;
-- `swagger-ui-express` para criação da página visual de descrição e teste da API
-- `uuid` para gerar o ID da páginação
-- `yamljs` para leitura do arquivo `yaml` de configuração do Swagger
+- `cors@^2.8.5` para liberação de acesso;
+- `joi@^16.0.0` para validação de `schemas` e dados;
+- `swagger-ui-express@^4.3.0` para criação da página visual de descrição e teste da API
+- `uuid@^8.3.2` para gerar o ID da páginação
+- `yamljs@^0.3.0` para leitura do arquivo `yaml` de configuração do Swagger
 
 No ambiente de desenvolvimento ainda são usadas as dependências:
 
-- `mocha`, `chai`, `chai-http`, `chai-uuid` e `sinon` para os testes;
-- `nyc` para gerar os relatórios de cobertura de testes
-- `nodemon` para iniciar a aplicação com reinício automático
-- `eslint`, `eslint-config-trybe-backend`, `eslint-plugin-import`, `eslint-plugin-mocha` e `eslint-plugin-sonarjs` para configuração do ESLint
+- `mocha@^9.2.0`, `chai@^4.3.6`, `chai-http@^4.30`, `chai-uuid@^1.0.6` e `sinon@^13.0.1` para os testes;
+- `nyc@^15.1.0` para gerar os relatórios de cobertura de testes
+- `nodemon@^2.0.15` para iniciar a aplicação com reinício automático
+- `eslint@^8.8.0`, `eslint-config-trybe-backend@^1.0.4`, `eslint-plugin-import@^2.25.4`, `eslint-plugin-mocha@^10.0.3` e `eslint-plugin-sonarjs@ˆ0.11.0` para configuração do ESLint
 
 ## Arquitetura
 
