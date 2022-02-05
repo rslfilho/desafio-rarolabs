@@ -8,6 +8,7 @@
 - [Desenvolvimento](#Desenvolvimento)
 - [Arquitetura](#Arquitetura)
 - [Outros Scripts da Aplicação](#outros-scripts-configurados-na-aplicação)
+- [Deploy](#Deploy)
 - [Contribuições](#Contribuições)
 - [Contato](#Contato)
 
