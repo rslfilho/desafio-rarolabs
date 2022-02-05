@@ -151,7 +151,7 @@ Esta aplicação está rodando na plataforma do Heroku, usando a integração di
 
 Está acessível pelo endpoint `https://rslfilho-rarolabs.herokuapp.com/`.
 
-É possível acessar a página Swagger da aplicação rodando e/ou testar a aplicação, ver detalhadamente os parâmetros esperados, as possíveis respostas e sua formatação [aqui](https://g3-deliveryapp-backend.herokuapp.com/swagger/).
+É possível acessar a página Swagger da aplicação rodando e/ou testar a aplicação, ver detalhadamente os parâmetros esperados, as possíveis respostas e sua formatação [aqui](https://rslfilho-rarolabs.herokuapp.com/swagger/).
 
 ## Contribuições
 
