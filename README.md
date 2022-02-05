@@ -91,7 +91,7 @@ npm start
 
 4 - A aplicação estárá rodando e acessível em `http://localhost:3000/`. A porta pode modificar se tiver uma variável `PORT` no ambiente que estiver executando;
 
-6 - Para conseguir uma paginação, faça uma requisição `GET` na rota `http://localhost:3000/v1/paginacao` passando os parâmetros query `paginaAtual` e `quantidadePaginas`, exemplo:
+5 - Para conseguir uma paginação, faça uma requisição `GET` na rota `http://localhost:3000/v1/paginacao` passando os parâmetros query `paginaAtual` e `quantidadePaginas`, exemplo:
 
 ```bash
 curl -X 'GET' \
@@ -99,7 +99,7 @@ curl -X 'GET' \
   -H 'accept: application/json'
 ```
 
-7 - Para acessar a descrição da API e/ou testar seu funcionamento, ver detalhadamente os parâmetros esperados, as possíveis respostas e sua formatação, basta acessar `http://localhost:3000/swagger/`.
+6 - Para acessar a descrição da API e/ou testar seu funcionamento, ver detalhadamente os parâmetros esperados, as possíveis respostas e sua formatação, basta acessar `http://localhost:3000/swagger/`.
 
 ## Desenvolvimento
 
