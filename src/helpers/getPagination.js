@@ -1,12 +1,13 @@
+const setPage = (page, index) => {
+  if (page === index) return `**${index}**`;
+  return index.toString();
+};
+
 const getPaginationTypeOne = (page, pageQuantity) => {
   const result = [];
 
   for (let index = 1; index <= pageQuantity; index += 1) {
-    if (page === index) {
-      result.push(`**${index}**`);
-    } else {
-      result.push(index.toString());
-    }
+    result.push(setPage(page, index));
   }
 
   return result;
@@ -16,11 +17,7 @@ const getPaginationTypeTwo = (page) => {
   const result = [];
   
   for (let index = 1; index <= 5; index += 1) {
-    if (page === index) {
-      result.push(`**${index}**`);
-    } else {
-      result.push(index.toString());
-    }
+    result.push(setPage(page, index));
   }
 
   result.push('...');
@@ -32,11 +29,7 @@ const getPaginationTypeThree = (page, pageQuantity) => {
   const result = ['...'];
 
   for (let index = pageQuantity - 4; index <= pageQuantity; index += 1) {
-    if (page === index) {
-      result.push(`**${index}**`);
-    } else {
-      result.push(index.toString());
-    }
+    result.push(setPage(page, index));
   }
   
   return result;
@@ -46,11 +39,7 @@ const getPaginationTypeFour = (page) => {
   const result = ['...'];
 
   for (let index = page - 2; index <= page + 2; index += 1) {
-    if (page === index) {
-      result.push(`**${index}**`);
-    } else {
-      result.push(index.toString());
-    }
+    result.push(setPage(page, index));
   }
 
   result.push('...');
