@@ -129,7 +129,7 @@ A API está contida na pasta `/src` dentro da raiz do repositório, nela temos:
 - `/helpers` funções ou dados auxiliares
 - `/middlewares` arquivos de middlewares como o de Erro e o de configuração do Swagger;
 - `/routers` configuração de roteadores do Express;
-- `/serviços` arquivos de Serviços da aplicação, como os de Paginação e Validação;
+- `/services` arquivos de Serviços da aplicação, como os de Paginação e Validação;
 - `/tests` arquivos de testes, unitários e de integração
 
 ## Outros Scripts configurados na aplicação
