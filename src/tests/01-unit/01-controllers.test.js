@@ -29,7 +29,7 @@ describe('O controller da rota GET/v1/paginacao', () => {
 
       it('a função next é chamada', async () => {
         await paginationController.get(request, response, next);
-        expect(next.calledOn()).to.be.true;
+        expect(next.calledOn()).to.be.false;
       });
     });
 
