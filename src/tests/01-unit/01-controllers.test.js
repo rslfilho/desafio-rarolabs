@@ -34,7 +34,7 @@ describe('O controller da rota GET/v1/paginacao', () => {
     });
 
     describe('um ou os dois parâmetros query estão faltando', () => {
-      const missingParamsErro = {
+      const missingParamsError = {
         statusCode: 400,
         code: 'bad_request',
         message: 'Missins query params "paginaAtual" and/or "quantidadePaginas"',
@@ -52,7 +52,7 @@ describe('O controller da rota GET/v1/paginacao', () => {
 
       it('a função next é retornada com o parâmetro de erro esperado', async () => {
         await paginationController.get(request, response, next);
-        expect(next.calledWith(missingParamsErro)).to.be.true;
+        expect(next.calledWith(missingParamsError)).to.be.true;
       });
     });
 
