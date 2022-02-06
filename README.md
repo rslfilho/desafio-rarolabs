@@ -165,7 +165,9 @@ Fique à vontade para abrir um PR para qualquer contribuição que desejar.
 
 Na abertura e atualizações de PR's serão executadas duas `actions`. 
 A primeira rodará o ESLint para fazer a análise estática do código, já a segunda rodará os testes da aplicação.
-Aprovadas as duas `actions` e depois do CR de um dos proprietários do código, o PR poderá ser mergeado
+Aprovadas as duas `actions` e depois do CR de um dos proprietários do código, o PR poderá ser mergeado.
+
+O arquivo com as `actions` pode ser encontrado [aqui](https://github.com/rslfilho/desafio-rarolabs/tree/main/.github/workflows).
 
 ## Contato
 
