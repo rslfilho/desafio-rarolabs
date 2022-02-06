@@ -61,6 +61,8 @@ curl -X 'GET' \
   -H 'accept: application/json'
 ```
 
+Para acessar a página de monitoramento da aplicação online basta clicar [aqui](https://rslfilho-rarolabs.herokuapp.com/status).
+
 ## Como usar no ambiente local
 
 1 - Para clonar o repositório, vá até o diretório onde deseja clonar, execute o `git clone` e depois entre no diretório criado:
@@ -101,6 +103,8 @@ curl -X 'GET' \
 ```
 
 6 - Para acessar a descrição da API e/ou testar seu funcionamento, ver detalhadamente os parâmetros esperados, as possíveis respostas e sua formatação, basta acessar `http://localhost:3000/swagger/`.
+
+7 - Para acessar a página de monitoramento da aplicação online basta clicar [aqui](http://localhost:3000/status).
 
 ## Desenvolvimento
 
