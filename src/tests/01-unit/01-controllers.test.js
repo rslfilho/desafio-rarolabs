@@ -63,14 +63,12 @@ describe('O controller da rota GET/v1/paginacao', () => {
         message: 'Invalid query params "paginaAtual" and/or "quantidadePaginas"',
       };
 
-      const responseMock = { code: 'invalidParams' };
-
       before(() => {
         request.query = {
           paginaAtual: 1,
           quantidadePaginas: 'ten',
         };
-        sinon.stub(paginationService, 'get').resolves(responseMock);
+        sinon.stub(paginationService, 'get').rejects(invalidParamsError);
       });
 
       after(async () => {
@@ -91,14 +89,12 @@ describe('O controller da rota GET/v1/paginacao', () => {
         message: '"paginaAtual" must be a smaller number than "quantidadePaginas"',
       };
 
-      const responseMock = { code: 'pageBigger' };
-
       before(() => {
         request.query = {
           paginaAtual: 15,
           quantidadePaginas: 10,
         };
-        sinon.stub(paginationService, 'get').resolves(responseMock);
+        sinon.stub(paginationService, 'get').rejects(pageBiggerError);
       });
 
       after(async () => {

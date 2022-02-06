@@ -13,36 +13,51 @@ describe('O service da rota GET/v1/paginacao', () => {
 
   describe('retorna objeto de erro', () => {
     describe('os parâmetros são inválidos', () => {
+      const invalidParamsError = {
+        statusCode: 400,
+        code: 'bad_request',
+        message: 'Invalid query params "paginaAtual" and/or "quantidadePaginas"',
+      };
+
       before(async () => {
         sinon.stub(validateService, 'queryParams').returns({ error: true });
-        response = await paginationService.get(4, 'ten');
+        try {
+          await paginationService.get(4, 'ten');
+        } catch (e) {
+          response = e;
+        }
       });
 
       after(async () => {
         await validateService.queryParams.restore();
       });
 
-      it('retorna um objeto', () => {
-        expect(response).to.be.an('object');
+      it('retorna um objeto', async () => {
+          expect(response).to.be.an('object');
       });
 
       it('o objeto tem a chave "code"', () => {
-        expect(response).to.have.all.keys('code');
+        expect(response).to.have.all.keys('code', 'statusCode', 'message');
       });
 
       it('a chave "code" do objeto retornado tem o valor "invalidParams"', () => {
-        expect(response.code).to.eq('invalidParams');
+        expect(response).to.deep.equals(invalidParamsError);
       });
     });
 
     describe('o parâmetro "page" é maior que "pageQuantity"', () => {
-      before(async () => {
-        sinon.stub(validateService, 'queryParams').returns({ error: undefined });
-        response = await paginationService.get(15, 10);
-      });
+      const pageBiggerError = {
+        statusCode: 400,
+        code: 'bad_request',
+        message: '"paginaAtual" must be a smaller number than "quantidadePaginas"',
+      };
 
-      after(async () => {
-        await validateService.queryParams.restore();
+      before(async () => {
+        try {
+          await paginationService.get(15, 10);
+        } catch (e) {
+          response = e;
+        }
       });
 
       it('retorna um objeto', () => {
@@ -50,11 +65,11 @@ describe('O service da rota GET/v1/paginacao', () => {
       });
 
       it('o objeto tem a chave "code"', () => {
-        expect(response).to.have.all.keys('code');
+        expect(response).to.have.all.keys('code', 'statusCode', 'message');
       });
 
       it('a chave "code" do objeto retornado tem o valor "pageBigger"', () => {
-        expect(response.code).to.eq('pageBigger');
+        expect(response).to.deep.equal(pageBiggerError);
       });
     });
   });
@@ -62,7 +77,6 @@ describe('O service da rota GET/v1/paginacao', () => {
   describe('retorna a paginação corretamente', () => {
     describe('todos os parâmetros são válidos e corretos', () => {
       const paginationMock = ['...', '2', '3', '**4**', '5', '6', '...'];
-      const uuidMock = 'a416d989-91d1-48c9-b583-267df138834c';
 
       before(async () => {
         sinon.stub(helpers, 'getPagination').returns(paginationMock);
