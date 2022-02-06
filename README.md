@@ -157,6 +157,8 @@ Está acessível pelo endpoint `https://rslfilho-rarolabs.herokuapp.com/`.
 
 É possível acessar a página Swagger da aplicação rodando e/ou testar a aplicação, ver detalhadamente os parâmetros esperados, as possíveis respostas e sua formatação [aqui](https://rslfilho-rarolabs.herokuapp.com/swagger/).
 
+Para acessar a página de monitoramento da aplicação online basta clicar [aqui](https://rslfilho-rarolabs.herokuapp.com/status).
+
 ## Contribuições
 
 Fique à vontade para abrir um PR para qualquer contribuição que desejar. 
