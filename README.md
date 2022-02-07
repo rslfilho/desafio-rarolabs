@@ -104,7 +104,7 @@ curl -X 'GET' \
 
 6 - Para acessar a descrição da API e/ou testar seu funcionamento, ver detalhadamente os parâmetros esperados, as possíveis respostas e sua formatação, basta acessar `http://localhost:3000/swagger/`.
 
-7 - Para acessar a página de monitoramento da aplicação online basta clicar `http://localhost:3000/status`.
+7 - Para acessar a página de monitoramento da aplicação online basta acessar `http://localhost:3000/status`.
 
 ## Desenvolvimento
 
