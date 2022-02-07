@@ -127,6 +127,8 @@ No ambiente de desenvolvimento ainda são usadas as dependências:
 
 ## Arquitetura
 
+Usei uma arquitetura baseada em MSC (Model, Service, Controller) mas sem Model pois não temos acessos a banco de dados ou outras API nessa nossa rota única.
+
 A API está contida na pasta `/src` dentro da raiz do repositório, nela temos:
 
 - `/api` arquivos de configuração e início da aplicação;
