@@ -113,6 +113,8 @@ A API foi desenvolvida em Node.js com Express.
 Além disso, as dependências da aplicação são:
 
 - `cors@^2.8.5` para liberação de acesso;
+- `express-status-monitor@ˆ1.3.3` para criação da página de monitoramento;
+- `express-winston@ˆ4.2.0` e `winston@ˆ3.5.1` para logs de erro;
 - `joi@^16.0.0` para validação de `schemas` e dados;
 - `swagger-ui-express@^4.3.0` para criação da página visual de descrição e teste da API
 - `uuid@^8.3.2` para gerar o ID da páginação
