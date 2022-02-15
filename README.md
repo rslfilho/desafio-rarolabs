@@ -163,6 +163,8 @@ A API está contida na pasta `/src` dentro da raiz do repositório, nela temos:
 
 ![Cobertura de Testes](./images/test-coverage.png "Test Coverage")
 
+A cobertura de testes atingiu mais de 95%.
+
 ## Deploy
 
 Esta aplicação está rodando na plataforma do Heroku, usando a integração direta com o GitHub.
