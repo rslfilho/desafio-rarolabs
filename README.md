@@ -9,6 +9,7 @@
 - [Desenvolvimento](#Desenvolvimento)
 - [Arquitetura](#Arquitetura)
 - [Outros Scripts da Aplicação](#outros-scripts-configurados-na-aplicação)
+- [Cobertura de Testes](#cobertura-de-testes)
 - [Deploy](#Deploy)
 - [Contribuições](#Contribuições)
 - [Contato](#Contato)
