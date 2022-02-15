@@ -4,6 +4,7 @@
 
 - [Descrição](#Descrição)
 - [Como Usar Online](#Como-Usar-Online)
+- [Pré-requisitos](#Pré-requisitos-para-rodar-a-aplicação)
 - [Como Usar Localmente](#Como-usar-no-ambiente-local)
 - [Desenvolvimento](#Desenvolvimento)
 - [Arquitetura](#Arquitetura)
@@ -62,6 +63,11 @@ curl -X 'GET' \
 ```
 
 Para acessar a página de monitoramento da aplicação online basta clicar [aqui](https://rslfilho-rarolabs.herokuapp.com/status).
+
+## Pré-requisitos para rodar a aplicação
+
+- Node.js
+- NPM
 
 ## Como usar no ambiente local
 
